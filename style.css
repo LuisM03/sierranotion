@@ -10,6 +10,7 @@
 :root{
     --color-background: #ffffff;
     --color-background2: #F2F2F2;
+    --color-background-opacity: #ffffff4d;
     --color-primary: #166ED8;
     --color-primary2: #222224;
     --color-primary3: #E7E7E7;
@@ -54,6 +55,7 @@
     background-position:  50% center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .contentStated1{
@@ -61,7 +63,6 @@
     max-width: 1200px;
     margin: 0px auto;
     height: 100vh;
-    max-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,16 +106,18 @@
 /* Stated2  customization*/
 
 .stated2{
+    width: 100%;
     background-color: var(--color-primary3);
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 0px;
 }
 
 .contentStated2{
-    margin: 0px auto;
-    padding: 50px 0px;
     width: 100%;
     max-width: 1200px;
-    max-height: 600px;
     display: flex;
     justify-content: space-between;
 }
@@ -138,7 +141,6 @@
     color: var(--color-paragraph);
     font-size: var(--paragraph);
     font-family: var(--fontTitle);
-    font-weight: 700;
 }
 .texts span{
     font-size: 35px;
@@ -147,8 +149,8 @@
 
 .imgGrid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
     grid-auto-columns: minmax(300px, auto);
     grid-auto-rows: minmax(300px, auto);
     row-gap: 10px;
@@ -261,7 +263,12 @@
 /* Stated4 customization*/
 
 .stated4{
-    margin: 90px auto;
+    background-color: var(--color-primary);
+}
+
+.contentStated4{
+    padding: 90px 0px;
+    margin: 0px auto;
     width: 100%;
     max-width: 1200px;
     max-height: 600px;
@@ -272,56 +279,55 @@
     font-size: var(--subtitle);
     font-weight: 900;
     margin-bottom: 90px;
-    color: var(--color-primary2);
+    color: var(--color-background);
+}
+
+.stated4 h1{
+    font-family: var(--fontTitle);
+    font-size: var(--title);
+    font-weight: 900;
+    color: var(--color-background2);
 }
 
 
 .row1Fq, .row2Fq{
     display: flex;
-    justify-content: space-between;
-}
-
-.textFq1, .textFq2{
-    display: flex;
+    justify-content: space-around;
 }
 
 .textFq1{
     margin-bottom: 50px;
 }
 
-.textFq1 span, .textFq2 span{
-    width: 50px;
-    height: 50px;
-    background-color:var(--color-primary);
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:var(--text-button);
-    font-family: var(--fontTitle);
-    font-weight: 900;
-    color: var(--color-text-button);
-    margin-right: 30px;
-}
-
 .textFq{
-    width: 400px;
+    width: 300px;
 }
 
 .textFq h3{
     font-family: var(--paragraph);
     font-family: var(--fontTitle);
     font-weight: 900;
-    margin-bottom: 40px;
-    color: var(--color-primary2);
+    margin-bottom: 20px;
+    color: var(--color-background);
 }
 
 .textFq p{
     font-family: var(--fontTitle);
     font-size: var(--paragraph);
-    color: var(--color-paragraph);
+    color: var(--color-background);
 }
 
+.textFq1, .textFq2, .textFq3{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textFq1:hover, .textFq2:hover, .textFq3:hover{
+    background-color: var(--color-background-opacity);
+}
 /* Stated5 customization */
 
 .stated5{
@@ -342,6 +348,8 @@
     width: 70%;
     height: 80vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form{
@@ -368,7 +376,7 @@
 .form p{
     width: 300px;
     text-align: center;
-    margin: 30px 0px;
+    margin: 10px 0px;
     font-family: var(--fontTitle);
     font-size: var(--paragraph);
     color: var(--color-paragraph);
@@ -412,7 +420,6 @@
     font-size: var(--text-button);
     font-weight: 600;
     color: var(--color-primary2);
-    overflow: hidden;
 }
 
 .according input{
@@ -421,8 +428,26 @@
 
 .inputs label{
     font-family: var(--fontTitle);
-    font-size: var(--paragraph);
+    font-size: var(--text-button);
     color: var(--color-paragraph);
+}
+
+#message{
+    width: 300px;
+    height: 80px;
+    resize: none;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-family: var(--fontTitle);
+    font-size: var(--text-button);
+    font-weight: 600;
+    color: var(--color-primary2);
+    border: none;
+    background-color: var(--color-target);
+}
+
+#message:active{
+    border: none;
 }
 
 .buttonForm{
