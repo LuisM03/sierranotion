@@ -38,7 +38,7 @@
 .menu{
     width: 100%;
     height: 70px;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,11 +51,8 @@
 
 /* Stated1 customization */
 .stated1{
-    background-image: url(./img/images/fondo/SIERRA\ NOTION.png);
+    background: url(./img/images/fondo/SIERRA\ NOTION.png) no-repeat 100%;
     background-position:  50% center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .contentStated1{
@@ -76,11 +73,12 @@
     color: var(--color-background);
 }
 .stated1 p{
-    width: 500px;
+    width: 400px;
     font-size: var(--paragraph);
     margin: 50px 0px;
     font-family: var(--fontTitle);
-    color: var(--color-paragraph);
+    color: var(--color-background);
+    font-weight: 300;
 }
 .button{
     width: 150px;
@@ -91,6 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .button a{
     text-decoration: none;
@@ -225,6 +224,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-family: var(--fontTitle);
+    cursor: default;
 }
 
 .why1:hover, .why2:hover, .why3:hover, .why4:hover{
@@ -236,6 +236,7 @@
         1.8px 16.6px 24.1px rgba(0, 0, 0, 0.022),
         6px 55px 80px rgba(0, 0, 0, 0.03);
     box-sizing: border-box;
+    transition: all 0.5s;
 }
 
 .barTitle{
@@ -309,12 +310,14 @@
     font-weight: 900;
     margin-bottom: 20px;
     color: var(--color-background);
+    cursor: default;
 }
 
 .textFq p{
     font-family: var(--fontTitle);
     font-size: var(--paragraph);
     color: var(--color-background);
+    cursor: default;
 }
 
 .textFq1, .textFq2, .textFq3{
@@ -327,6 +330,7 @@
 
 .textFq1:hover, .textFq2:hover, .textFq3:hover{
     background-color: var(--color-background-opacity);
+    transition: all 0.5s;
 }
 /* Stated5 customization */
 
@@ -371,6 +375,7 @@
     width: 250px;
     text-align: center;
     color: var(--color-primary2);
+    margin-bottom: 20px;
 }
 
 .form p{
@@ -432,6 +437,12 @@
     color: var(--color-paragraph);
 }
 
+#email:focus, #name:focus, #message:focus{
+    box-sizing: border-box;
+    outline: 2px solid var(--color-primary);
+}
+
+
 #message{
     width: 300px;
     height: 80px;
@@ -446,9 +457,6 @@
     background-color: var(--color-target);
 }
 
-#message:active{
-    border: none;
-}
 
 .buttonForm{
     width: 100%;
@@ -511,3 +519,4 @@ footer{
     text-decoration: none;
     font-weight: bold;
 }
+
