@@ -4,85 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sierra Notion</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./img/principal-azul.svg" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="screen.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
-
-    <script src="./scrollJs.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"rel="stylesheet">
+    <title>Sierra Notion</title>
 </head>
 <body>
-    <div class="menu">
-        <a href="#">
-            <img src="./img/principal-blanco.svg" alt="">
-        </a>
-    </div>
-    <div class="stated1">  
-        <div class="contentStated1">
-            <h1 class="titleAnimation">Vestibulum Antes
-                Psum Primis In
-                Faucibus Orci.
-            </h1>
-            <p class="paragraphAnimation">Aenean porta scelerisque lacus, quis consectetur leo euismod id.
-                Cras semper aliquam elit, id finibus diam lobortis quis.
-                Suspendisse potenti.
-            </p>
-            <div class="button buttonAnimation">
-                <a href="#">
-                    Contactanos
-                </a>
-            </div>
+    <nav>
+        <div class="menu">
+            <img src="./img/logo/principal-blanco.svg" alt="">
         </div>
-    </div>
-    <div class="stated2">   
-        <div class="contentStated2">
-            <div class="texts">
-                <h2 class="titleAnimation2">Ofrecemos</h2>
-                <div class="text1">
-                    <span class="material-icons-outlined"> check_circle </span>
-                    <p>Aenean porta scelerisque
-                        lacus, quis consectetur
-                        leo euismod id.
-                    </p>
+    </nav>
+    <main>
+        <section class="sectionBackground">
+            <div class="section1">  
+                <h1>Vestibulum Antes
+                    Psum Primis In
+                    Faucibus Orci.
+                </h1>
+                <p>Aenean porta scelerisque lacus, quis consectetur leo euismod id.
+                    Cras semper aliquam elit, id finibus diam lobortis quis.
+                    Suspendisse potenti.
+                </p>
+                <button type="submit">Contactar</button>
+            </div>
+        </section>
+        <section class="sectionBackground2">
+            <div class="section2">
+                <div class="contentTexts">
+                    <h2 class="titleAnimation2">Ofrecemos</h2>
+                    <div class="texts">
+                        <span class="material-icons-outlined">task_alt</span>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Curabitur sed orci mauris. Pellentesque feugiat mauris 
+                            lacus, quis eleifend nunc feugiat nec.
+                        </p>
+                    </div>
+                    <div class="texts">
+                        <span class="material-icons-outlined">task_alt</span>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Curabitur sed orci mauris. Pellentesque feugiat mauris 
+                            lacus, quis eleifend nunc feugiat nec.
+                        </p>
+                    </div>
+                    <div class="texts">
+                        <span class="material-icons-outlined">task_alt</span>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Curabitur sed orci mauris. Pellentesque feugiat mauris 
+                            lacus, quis eleifend nunc feugiat nec.
+                        </p>
+                    </div>
                 </div>
-                <div class="text2">
-                    <span class="material-icons-outlined"> check_circle </span>
-                    <p>Aenean porta scelerisque
-                        lacus, quis consectetur
-                        leo euismod id.
-                    </p>
-                </div>
-                <div class="text3">
-                    <span class="material-icons-outlined"> check_circle </span>
-                    <p>Aenean porta scelerisque
-                        lacus, quis consectetur
-                        leo euismod id.
-                    </p>
+                <div class="imgGrid">
+                    <img src="./img/images/pexels-oleg-magni-2764678.jpg" alt="" class="img1">
+                    <img src="./img/images/pexels-leticia-azevedo-9459781.jpg" alt="" class="img2">
+                    <img src="./img/images/pexels-antoni-shkraba-4348401.jpg" alt="" class="img3">
                 </div>
             </div>
-            <div class="imgGrid">
-                <img src="./img/images/pexels-oleg-magni-2764678.jpg" alt="" class="img1">
-                <img src="./img/images/pexels-leticia-azevedo-9459781.jpg" alt="" class="img2">
-                <img src="./img/images/pexels-antoni-shkraba-4348401.jpg" alt="" class="img3">
-            </div>
-        </div>
-    </div>
-    <div class="stated3">
-        <div class="contentStated3">
-            <div class="barTitle">
-                <h2>¿Por Qué?</h2>
-                <a href="#">Contactar</a>
-            </div>
-            <div class="content">
-                <div class="why">
-                    <div class="why1">
-                        <div class="contentWhyN">
+        </section>
+        <section class="sectionBackground3">
+            <div class="section3">
+                <div class="barTitle">
+                    <h2>¿Por Qué?</h2>
+                    <a href="#">Contactar</a>
+                </div>
+                <div class="contentWhy">
+                    <div class="contentWhyN">
+                        <div>
                             <span class="material-icons-outlined">settings</span>
                             <h3>Vestibulum anti ipsum</h3>
                             <p>Aenean porta scelerisque
@@ -91,8 +80,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="why2">
-                        <div class="contentWhyN">
+                    <div class="contentWhyN">
+                        <div>
                             <span class="material-icons-outlined">settings</span>
                             <h3>Vestibulum anti ipsum</h3>
                             <p>Aenean porta scelerisque
@@ -101,18 +90,18 @@
                             </p>
                         </div>
                     </div>
-                    <div class="why3">
-                        <div class="contentWhyN">
+                    <div class="contentWhyN">
+                        <div>
                             <span class="material-icons-outlined">settings</span>
-                            <h3>Vestibulum anti</h3>
+                            <h3>Vestibulum anti ipsum</h3>
                             <p>Aenean porta scelerisque
                                 lacus, quis consectetur leo
                                 euismod id. Cras semper
                             </p>
                         </div>
                     </div>
-                    <div class="why4">
-                        <div class="contentWhyN">
+                    <div class="contentWhyN">
+                        <div>
                             <span class="material-icons-outlined">settings</span>
                             <h3>Vestibulum anti ipsum</h3>
                             <p>Aenean porta scelerisque
@@ -123,88 +112,92 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="stated4">
-        <div class="contentStated4">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="frequentQuestions">
-                <div class="row1Fq">
-                    <div class="textFq1">
-                        <div class="textFq">
-                            <h3>Vestibulum ante ipsum primis in
-                                faucibus ?</h3>
-                            <p>Aenean porta scelerisque lacus, quis
-                                consectetur leo euismod id. Cras semper
-                                aliquam elit.</p>
+        </section>
+        <section class="sectionBackground4">
+            <div class="section4">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="frequentQuestions">
+                    <div class="rowFq">
+                        <div class="textFq1">
+                            <div class="textFq">
+                                <h3>Vestibulum ante ipsum primis in
+                                    faucibus ?</h3>
+                                <p>Aenean porta scelerisque lacus, quis
+                                    consectetur leo euismod id. Cras semper
+                                    aliquam elit.</p>
+                            </div>
+                        </div>
+                        <div class="textFq3">
+                            <div class="textFq">
+                                <h3>Vestibulum ante ipsum primis in
+                                    faucibus ?</h3>
+                                <p>Aenean porta scelerisque lacus, quis
+                                    consectetur leo euismod id. Cras semper
+                                    aliquam elit.</p>
+                            </div>
+                        </div>
+                        <div class="textFq3">
+                            <div class="textFq">
+                                <h3>Vestibulum ante ipsum primis in
+                                    faucibus ?</h3>
+                                <p>Aenean porta scelerisque lacus, quis
+                                    consectetur leo euismod id. Cras semper
+                                    aliquam elit.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="textFq3">
-                        <div class="textFq">
-                            <h3>Vestibulum ante ipsum primis in
-                                faucibus ?</h3>
-                            <p>Aenean porta scelerisque lacus, quis
-                                consectetur leo euismod id. Cras semper
-                                aliquam elit.</p>
+                    <div class="rowFq">
+                        <div class="textFq1">
+                            <div class="textFq">
+                                <h3>Vestibulum ante ipsum primis in
+                                    faucibus ?</h3>
+                                <p>Aenean porta scelerisque lacus, quis
+                                    consectetur leo euismod id. Cras semper
+                                    aliquam elit.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row2Fq">
-                    <div class="textFq1">
-                        <div class="textFq">
-                            <h3>Vestibulum ante ipsum primis in
-                                faucibus ?</h3>
-                            <p>Aenean porta scelerisque lacus, quis
-                                consectetur leo euismod id. Cras semper
-                                aliquam elit.</p>
+                        <div class="textFq3">
+                            <div class="textFq">
+                                <h3>Vestibulum ante ipsum primis in
+                                    faucibus ?</h3>
+                                <p>Aenean porta scelerisque lacus, quis
+                                    consectetur leo euismod id. Cras semper
+                                    aliquam elit.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="textFq3">
-                        <div class="textFq">
-                            <h3>Vestibulum ante ipsum primis in
-                                faucibus ?</h3>
-                            <p>Aenean porta scelerisque lacus, quis
-                                consectetur leo euismod id. Cras semper
-                                aliquam elit.</p>
+                        <div class="textFq3">
+                            <div class="textFq">
+                                <h3>Vestibulum ante ipsum primis in
+                                    faucibus ?</h3>
+                                <p>Aenean porta scelerisque lacus, quis
+                                    consectetur leo euismod id. Cras semper
+                                    aliquam elit.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-   
-    <div class="stated5">
-        <h2>Formulario de Contacto</h2>
-        <div class="formDiv">     
+        </section>
+    <section class="sectionBackground5">
+        <div class="contentForm">
+            <h2>Formulario de Contacto</h2>
             <div class="form">
                 <h3>¡Contáctate con Nosotros!</h3>
                 <div class="inputs">
                     <input type="text" name="name" id="name" placeholder="Nombre"><br>
                     <input type="text" name="name" id="email" placeholder="Correo"><br>
-                    <textarea name="textarea" rows="2" id="message" placeholder="Mensaje" autofocus></textarea>
+                    <textarea name="textarea" rows="2" id="message" placeholder="Mensaje"></textarea>
                     <button type="submit" class="button buttonForm">Enviar</button>
                 </div>
             </div>
-            <div class="dataQuestion">
-                <h3>¿Qué hacemos con tus
-                    datos?</h3>
-                <p>Mauris tempus lobortis tellus, vel volutpat
-                    orci tempor eleifend. Phasellus at efficitur
-                    nisi. Donec tempor mauris luctus gravida
-                    dapibus. Orci varius natoque penatibus et
-                    magnis dis parturient montes visitar <a href="">Políticas
-                    de Privacidad</a></p>
-            </div>
         </div>
-    </div>
+    </section>
+    </main>
     <footer>
-        <div class="contentFooter">
-            <a href="#">Sitio Oficial</a>
-            <a href="#">Políticas de Privacidad</a>
+        <div>
+            <a href="">Sitio Oficial</a>
+            <a href="">Políticas de Privacidad</a>
         </div>
     </footer>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="./scrollJs.js"></script> -->
 </body>
 </html>
